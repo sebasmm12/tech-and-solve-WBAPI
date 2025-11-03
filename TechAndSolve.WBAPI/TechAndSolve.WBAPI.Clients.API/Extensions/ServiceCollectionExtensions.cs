@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using TechAndSolve.WBAPI.Clients.Application.Clients.Requests;
 using TechAndSolve.WBAPI.Clients.Application.Clients.Services;
 using TechAndSolve.WBAPI.Clients.Infrastructure.Persistence;
@@ -70,7 +71,7 @@ public static class ServiceCollectionExtensions
                 ClockSkew = TimeSpan.Zero,
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(
-                    Convert.FromBase64String(configuration["Jwt:Key"]!))
+                    Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!))
             });
 
         return services;
