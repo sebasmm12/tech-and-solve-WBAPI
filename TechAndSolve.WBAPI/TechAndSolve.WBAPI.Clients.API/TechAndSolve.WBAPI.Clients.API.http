@@ -1,0 +1,6 @@
+@TechAndSolve.WBAPI.Clients.API_HostAddress = http://localhost:5050
+
+GET {{TechAndSolve.WBAPI.Clients.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
