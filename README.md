@@ -245,16 +245,12 @@ dotnet run --project TechAndSolve.WBAPI.Clients.API
 
 ## 📄 Licencia
 
-Este proyecto es parte de TechAndSolve y está destinado a fines educativos y de demostración.
+Este proyecto es parte de TechAndSolve y está destinado a fines de entrevista y de demostración.
 
 ## 👥 Autores
 
 - **Equipo TechAndSolve** - [GitHub](https://github.com/sebasmm12/tech-and-solve-WBAPI)
-
-## 📞 Soporte
-
-Para soporte, envíe un correo a support@techandsolve.com o abra un issue en el repositorio de GitHub.
-
+  
 ---
 
 **Rama:** `dev-WBAPI`  
